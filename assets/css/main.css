@@ -1,0 +1,76 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background: #000;
+}
+.movieContainer {
+    box-sizing: border-box;
+    position: relative;
+}
+.movie {
+    background-size: cover;
+    position: relative;
+    float:left;
+    width: 14.285714286vw;
+    height: 21.42857vw;
+    opacity:.5;
+    transition: .8s opacity;
+}
+.movie.hidden {
+    display: none;
+}
+.movie:hover {
+    opacity: 1;
+}
+.moviePoster {
+    width: 100%;
+    height: auto;
+    margin-bottom:-4px;
+}
+
+.searchForm {
+    animation-delay: .15s;
+    animation-duration: .3s;
+    animation-name: moveDown;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.33,1.02,.18,1.4);
+    width: 98%;
+    height: 128px;
+    max-width: 800px;
+    margin: auto;
+    position: fixed;
+    top: 0;
+    left:0;
+    right: 0;
+    bottom: 0;
+}
+.searchInput {
+    font-weight: 200;
+    font-family: "Avenir Next",Avenir,"Segoe UI",Roboto,"Helvetica Neue",Helvetica,sans-serif;
+    color: #febd17;
+    font-size: 4em;
+    outline: 0;
+    box-shadow: none;
+    -webkit-appearance: none;
+    border-radius: 0;
+    border: none;
+    background: 0 0;
+    display: block-inline;
+    height: 2em;
+    position: relative;
+    z-index: 0;
+    -moz-transition: color .2s ease-in-out,opacity .2s ease-in-out;
+    -o-transition: color .2s ease-in-out,opacity .2s ease-in-out;
+    -webkit-transition: color .2s ease-in-out,opacity .2s ease-in-out;
+    transition: color .2s ease-in-out,opacity .2s ease-in-out;
+}
+
+@media (max-width:768px) {
+    .movie {
+        width: 33.3333333vw;
+        height: 50vw;
+    }
+    .searchInput {
+        font-size: 2em;
+    }
+}

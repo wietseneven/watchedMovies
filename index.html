@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+<section id="movies" class="movieContainer"></section>
+<form class="searchForm" onsubmit="event.preventDefault();">
+	<input type="text"
+		   id="searchInput"
+		   autocomplete="off"
+		   placeholder="Type-in a movie"
+		   title="Name of a movie"
+		   spellcheck="false"
+		   class="searchInput"
+		   required=""
+		   autofocus
+		   maxlength="20"
+	>
+</form>
+<script src="https://www.google.com/jsapi"></script>
+<script src="assets/scripts/echo.js"></script>
+<script src="assets/scripts/app.js"></script>
+</body>
+</html>
