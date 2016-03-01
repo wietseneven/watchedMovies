@@ -12,7 +12,7 @@ var app = function() {
 						var entry = result.feed.entries[i];
 
 						var imdbID = entry.link.split( '/' )[4];
-						var moviePosterURL = 'http://img.omdbapi.com/?i='+ imdbID +'&apikey=d8995e02';
+						var moviePosterURL = 'https://img.omdbapi.com/?i='+ imdbID +'&apikey=d8995e02';
 
 						var movie = document.createElement("article");
 						movie.classList.add('movie');
@@ -88,7 +88,6 @@ var app = function() {
 					var image = thisEl.getElementsByClassName("moviePoster")[0];
 					if (this.windowHeight > thisEl.offsetTop && image.dataset.echo) {
 						image.src = image.dataset.echo;
-						console.log(image.dataset.echo);
 					}
 				} else {
 					thisEl.classList.add('hidden');
