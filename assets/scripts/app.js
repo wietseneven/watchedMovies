@@ -56,19 +56,10 @@ var app = function() {
 		init: function() {
 			window.onkeyup = this.keyup;
 			this.windowHeight = window.innerHeight;
-			this.watch();
-		},
-		watch: function() {
-			var searchForm = document.getElementById('searchInput');
-			searchForm.addEventListener('onkeydown', function() {
-				console.log('a');
-			});
 		},
 		keyup: function(e) {
 			var searchInput = document.getElementById('searchInput');
 			this.term = searchInput.value;
-
-			console.log(this.term);
 
 			if(e.keyCode == 13) {
 				e.preventDefault();
