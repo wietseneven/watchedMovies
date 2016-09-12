@@ -22,6 +22,8 @@ var app = function() {
 						image.classList.add("moviePoster");
 						image.dataset.echo = moviePosterURL;
 						image.src = 'assets/images/loader.gif';
+						image.title = entry.title;
+						image.alt = entry.title;
 
 						movie.appendChild(image);
 
